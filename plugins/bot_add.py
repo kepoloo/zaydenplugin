@@ -18,7 +18,7 @@ photo = [
 from strings.__init__ import LOGGERS
 
 
-@app.on_message(filters.new_chat_members, group=2)
+@app.on_message(filters.new_chat_members, group=-10)
 async def join_watcher(_, message):
     try:
         userbot = await get_assistant(message.chat.id)

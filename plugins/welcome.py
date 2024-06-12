@@ -178,7 +178,7 @@ async def auto_state(_, message):
         await message.reply("**sᴏʀʀʏ ᴏɴʟʏ ᴀᴅᴍɪɴs ᴄᴀɴ ᴇɴᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴ!**")
 
 
-@app.on_chat_member_updated(filters.group, group=-3)
+@app.on_chat_member_updated(filters.group, group=-8)
 async def greet_new_member(_, member: ChatMemberUpdated):
     chat_id = member.chat.id
     count = await app.get_chat_members_count(chat_id)

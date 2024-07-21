@@ -25,7 +25,11 @@ from VIPMUSIC.utils.logger import play_logs
 from VIPMUSIC.utils.stream.stream import stream
 
 RADIO_STATION = {
-    "I Radio": "https://n03.radiojar.com/4ywdgup3bnzuv?rj-ttl=5&rj-tok=AAABj8uuZsUA35B3Wyo8o0tCGg",
+    "IRADIO": "https://n03.radiojar.com/4ywdgup3bnzuv?rj-ttl=5&rj-tok=AAABj8uuZsUA35B3Wyo8o0tCGg",
+    "TEBET": "https://c4.siar.us/proxy/radiotebet/stream",
+    "GENTARA": "https://s1.gntr.net/listen/radio_gentara/gentara64",
+    "PRAMBORS": "https://np.tritondigital.com/public/nowplaying?mountName=PRAMBORS_FM&numberToFetch=1&eventType=track&request.preventCache=1721589576555",
+    "DELTA": "https://s1.cloudmu.id/listen/delta_fm/radio.mp3",
 }
 
 valid_stations = "\n".join([f"`{name}`" for name in sorted(RADIO_STATION.keys())])
